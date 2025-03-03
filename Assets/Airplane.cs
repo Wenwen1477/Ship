@@ -16,7 +16,7 @@ public class Airplane : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.useGravity = false;
+        rb.useGravity = true;
         rb.interpolation = RigidbodyInterpolation.Interpolate;
         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
     }
